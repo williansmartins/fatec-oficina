@@ -1,8 +1,2 @@
-/target
-/.classpath
-.classpath
-/.project
-/.settings
-/.settings/*
-/bin
-/bin/*
+build/
+node_modules/
