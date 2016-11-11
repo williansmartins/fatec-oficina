@@ -2,6 +2,7 @@ angular.module('myApp')
 
 .controller('MyController', ['$scope','conversorDeMoeda', function ($scope, conversorDeMoeda) {
 	$scope.variavel = 'Olá mundo!';
+	$scope.phone = '';
 	$scope.valores = conversorDeMoeda.moedas;
 	
 	$scope.pessoas = [
@@ -13,6 +14,10 @@ angular.module('myApp')
 
   	$scope.atualizar = function(novo){
 		$scope.variavel += novo;
+  	}
+
+  	$scope.popularPhone = function(){
+		$scope.phone = "551193650220";
   	}
 
 }]);

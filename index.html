@@ -25,6 +25,7 @@
         <script src="build/js/angular-app.js"></script>
         <script src="build/js/angular-controller.js"></script>
         <script src="build/js/angular-service.js"></script>
+        <script src="build/js/angular-filter.js"></script>
 
     </head>
     <body>
@@ -59,7 +60,11 @@
                     <h1>Início do projeto</h1>
                     <p>Agora vamos incrementar de pouco em pouco até finalizar nossa aplicação</p>
                 </div>
-                <span>{{variavel}}</span>
+                <h3>Phone</h3>
+                <input type="text" ng-model="phone | myFilter:'abc'"></input>
+                <button ng-click="popularPhone()">Popular Phone</button>
+                <h3>Variável</h3>
+                <span>{{variavel | myFilter: 'xyz'}}</span>
                 <br />
                 <input type="text" ng-model="variavel" ng-keyup="atualizar(variavel)" />
                 <br />
