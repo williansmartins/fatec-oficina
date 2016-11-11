@@ -59,9 +59,18 @@
                     <h1>Início do projeto</h1>
                     <p>Agora vamos incrementar de pouco em pouco até finalizar nossa aplicação</p>
                 </div>
-                {{variavel}}
+                <span>{{variavel}}</span>
                 <br />
                 <input type="text" ng-model="variavel" ng-keyup="atualizar(variavel)" />
+                <br />
+                <br />
+                <br />
+                <ul class="list-group">
+                  <li class="list-group-item" ng-repeat="pessoa in pessoas">
+                    <span class="badge badge-{{pessoa.cor}}">{{pessoa.idade}}</span>
+                    {{pessoa.nome}}
+                  </li>
+                </ul>
             </div>
         </div>
     </body>

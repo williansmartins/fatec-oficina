@@ -4,6 +4,8 @@ TAGS:
 * v1.0 (criando o repositorio e add o readme)
 * v1.1 (adicionando estrutura inicial)
 * v1.2 (adicionando gulp, bootstrap e less)
+* v1.3 (adicionando angular)
+* v1.4 (ng-repeat)
 
 Etapas de desenvolvimento:
 1. Baixar as dependencias
